@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>KADIO CALCULATOR</title>
+</head>
+<body>
+   <main>
+     <div class="calculator">
+        <div class="result-display">
+            <div class="calculator-details">
+                <h1>
+                    KADIO®
+                    <span>KD-100B</span>
+                    <span class="time" data-time></span>
+                </h1>
+                <h2>ELECTRONIC CALCULATOR</h2>
+            </div>
+            <div class="operand-display">
+                <span class="previous"></span>
+            </div>
+            <span class="memory-display"></span>
+        </div>
+
+        <div class="input-buttons">
+            <button class="empty" disabled></button>
+            <button class="empty"  disabled></button>
+            <button class="grand-total" data-canSwitch>GT</button>
+            <button class="operation" data-canSwitch>%</button>
+            <button class="memory-u" data-canSwitch>MU</button>
+            <button class="off-calculator">OFF</button>
+            <button class="memory-create" data-canSwitch>MRC</button>
+            <button class="memory-plus" data-canSwitch>M+</button>
+            <button class="memory-minus" data-canSwitch>M-</button>
+            <button class="operation divide" data-canSwitch>÷</button>
+            <button class="delete" data-canSwitch>-></button>
+            <button class="number" data-canSwitch>7</button>
+            <button class="number" data-canSwitch>8</button>
+            <button class="number" data-canSwitch>9</button>
+            <button class="operation multiply" data-canSwitch>x</button>
+            <button class="clear" data-canSwitch>C</button>
+            <button class="number" data-canSwitch>4</button>
+            <button class="number" data-canSwitch>5</button>
+            <button class="number" data-canSwitch>6</button>
+            <button class="operation" data-canSwitch>-</button>
+            <button class="on-calculator">ON</button>
+            <button class="number" data-canSwitch>1</button>
+            <button class="number" data-canSwitch>2</button>
+            <button class="number" data-canSwitch>3</button>
+            <button class="operation  span-two" data-canSwitch>+</button>
+            <button class="number" data-canSwitch>0</button>
+            <button class="number" data-canSwitch>00</button>
+            <button class="number" data-canSwitch>.</button>
+            <button class="equalTo" data-canSwitch>=</button>
+        </div>
+     </div>
+   </main>
+   <script src="script.js" type="module"></script>
+</body>
+</html>
