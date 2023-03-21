@@ -70,7 +70,7 @@ document.addEventListener('click',async(e) =>  {
     }
 })
 
-hide.addEventListener('click',() => {
+hideTimeBtn.addEventListener('click',() => {
     if(timeInput.innerHTML !== "HIDEN"){
         timeInput.innerHTML === "HIDEN"
     }else{
