@@ -3,7 +3,6 @@ const inputedNumber = document.querySelectorAll('.number')
 const inputedOperation = document.querySelectorAll('.operation')
 const currentOperandDisplay = document.querySelector('.operand-display')
 const previousOperandDisplay = document.querySelector('.previous')
-const hideTimeBtn = document.querySelector('.hide-time')
 const timeInput = document.querySelector('[data-time]')
 
 const calculator = new Calculator(currentOperandDisplay,previousOperandDisplay)
@@ -70,14 +69,6 @@ document.addEventListener('click',async(e) =>  {
     }
 })
 
-hideTimeBtn.addEventListener('click',() => {
-    if(timeInput.innerHTML !== "HIDEN"){
-        clearInterval(setCalculatorTime)
-        timeInput.innerHTML === "HIDEN"
-    }else{
-        setInterval(setCalculatorTime,100)
-    }
-})
 
 
 window.onload = localStorage.removeItem('value')
