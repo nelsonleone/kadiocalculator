@@ -3,7 +3,8 @@ const inputedNumber = document.querySelectorAll('.number')
 const inputedOperation = document.querySelectorAll('.operation')
 const currentOperandDisplay = document.querySelector('.operand-display')
 const previousOperandDisplay = document.querySelector('.previous')
-
+const hideTimeBtn = document.querySelector('.hide-time')
+const timeInput = document.querySelector('[data-time]')
 
 const calculator = new Calculator(currentOperandDisplay,previousOperandDisplay)
 
@@ -69,6 +70,18 @@ document.addEventListener('click',async(e) =>  {
     }
 })
 
+hide.addEventListener('click',() => {
+    if(timeInput.innerHTML !== "00:00"){
+        timeInput.innerHTML === "00:00"
+    }else{
+        const currentTime = new Date()
+        const Hr = currentTime.getHours()
+        const Mn = currentTime.getMinutes()
+    
+        timeInput.innerHTML =  Mn <= 9 ? `${Hr} : 0${Mn}`: `${Hr} : ${Mn}`;
+    }
+})
+
 
 window.onload = localStorage.removeItem('value')
 window.onload = calculator.switchOff()
@@ -80,7 +93,6 @@ function setCalculatorTime(){
     const Hr = currentTime.getHours()
     const Mn = currentTime.getMinutes()
 
-    const timeInput = document.querySelector('[data-time]')
     timeInput.innerHTML =  Mn <= 9 ? `${Hr} : 0${Mn}`: `${Hr} : ${Mn}`;
 }
 

@@ -2,7 +2,7 @@ class Calculator{
     constructor(currentOperandDisplay,previousOperandDisplay){
         this.currentOperandDisplay = currentOperandDisplay;
         this.previousOperandDisplay = previousOperandDisplay;
-        this.buttons = document.querySelectorAll('[data-canSwitch')
+        this.buttons = document.querySelectorAll('[data-canSwitch]')
         this.memoryPara = document.querySelector('.memory-display')
         this.clear()
     }
@@ -130,6 +130,7 @@ class Calculator{
             }
          })
     }
+
 
 
     switchOff(){
