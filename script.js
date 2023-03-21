@@ -71,8 +71,8 @@ document.addEventListener('click',async(e) =>  {
 })
 
 hide.addEventListener('click',() => {
-    if(timeInput.innerHTML !== "00:00"){
-        timeInput.innerHTML === "00:00"
+    if(timeInput.innerHTML !== "HIDEN"){
+        timeInput.innerHTML === "HIDEN"
     }else{
         const currentTime = new Date()
         const Hr = currentTime.getHours()
