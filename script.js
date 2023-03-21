@@ -71,14 +71,11 @@ document.addEventListener('click',async(e) =>  {
 })
 
 hideTimeBtn.addEventListener('click',() => {
-    if(timeInput.innerHTML !== "HIDEN"){
+    if(timeInput.innerHTML !== "HIDEN"){\
+        clearInterval(setCalculatorTime)
         timeInput.innerHTML === "HIDEN"
     }else{
-        const currentTime = new Date()
-        const Hr = currentTime.getHours()
-        const Mn = currentTime.getMinutes()
-    
-        timeInput.innerHTML =  Mn <= 9 ? `${Hr} : 0${Mn}`: `${Hr} : ${Mn}`;
+        setInterval(setCalculatorTime,100)
     }
 })
 
